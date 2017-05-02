@@ -4,7 +4,7 @@
 #
 Name     : zope.proxy
 Version  : 4.2.1
-Release  : 2
+Release  : 3
 URL      : https://pypi.debian.net/zope.proxy/zope.proxy-4.2.1.tar.gz
 Source0  : https://pypi.debian.net/zope.proxy/zope.proxy-4.2.1.tar.gz
 Summary  : Generic Transparent Proxies
