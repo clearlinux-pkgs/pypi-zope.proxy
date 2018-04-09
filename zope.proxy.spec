@@ -4,13 +4,12 @@
 #
 Name     : zope.proxy
 Version  : 4.3.0
-Release  : 6
+Release  : 7
 URL      : https://pypi.debian.net/zope.proxy/zope.proxy-4.3.0.tar.gz
 Source0  : https://pypi.debian.net/zope.proxy/zope.proxy-4.3.0.tar.gz
 Summary  : Generic Transparent Proxies
 Group    : Development/Tools
 License  : ZPL-2.1
-Requires: zope.proxy-legacypython
 Requires: zope.proxy-python3
 Requires: zope.proxy-python
 Requires: Sphinx
@@ -37,19 +36,9 @@ Provides: zope.proxy-devel
 dev components for the zope.proxy package.
 
 
-%package legacypython
-Summary: legacypython components for the zope.proxy package.
-Group: Default
-Requires: python-core
-
-%description legacypython
-legacypython components for the zope.proxy package.
-
-
 %package python
 Summary: python components for the zope.proxy package.
 Group: Default
-Requires: zope.proxy-legacypython
 Requires: zope.proxy-python3
 
 %description python
@@ -73,8 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1512996382
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1523311327
 python3 setup.py build -b py3
 
 %check
@@ -83,10 +71,8 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 make check || :
 %install
-export SOURCE_DATE_EPOCH=1512996382
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -96,12 +82,7 @@ echo ----[ mark ]----
 
 %files dev
 %defattr(-,root,root,-)
-/usr/include/python2.7/zope.proxy/proxy.h
 /usr/include/python3.6m/zope.proxy/proxy.h
-
-%files legacypython
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
 
 %files python
 %defattr(-,root,root,-)
