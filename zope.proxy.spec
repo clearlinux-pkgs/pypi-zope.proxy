@@ -4,13 +4,14 @@
 #
 Name     : zope.proxy
 Version  : 4.3.0
-Release  : 9
+Release  : 10
 URL      : https://pypi.debian.net/zope.proxy/zope.proxy-4.3.0.tar.gz
 Source0  : https://pypi.debian.net/zope.proxy/zope.proxy-4.3.0.tar.gz
 Summary  : Generic Transparent Proxies
 Group    : Development/Tools
 License  : ZPL-2.1
 Requires: zope.proxy-python3
+Requires: zope.proxy-license
 Requires: zope.proxy-python
 Requires: Sphinx
 Requires: setuptools
@@ -19,7 +20,6 @@ Requires: zope.security
 Requires: zope.testrunner
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : python-dev
 BuildRequires : python3-dev
 BuildRequires : setuptools
 BuildRequires : zope.interface
@@ -34,6 +34,14 @@ Provides: zope.proxy-devel
 
 %description dev
 dev components for the zope.proxy package.
+
+
+%package license
+Summary: license components for the zope.proxy package.
+Group: Default
+
+%description license
+license components for the zope.proxy package.
 
 
 %package python
@@ -62,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523311327
+export SOURCE_DATE_EPOCH=1529091597
 python3 setup.py build -b py3
 
 %check
@@ -72,6 +80,8 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make check || :
 %install
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/doc/zope.proxy
+cp LICENSE.txt %{buildroot}/usr/share/doc/zope.proxy/LICENSE.txt
 python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -83,6 +93,10 @@ echo ----[ mark ]----
 %files dev
 %defattr(-,root,root,-)
 /usr/include/python3.6m/zope.proxy/proxy.h
+
+%files license
+%defattr(-,root,root,-)
+/usr/share/doc/zope.proxy/LICENSE.txt
 
 %files python
 %defattr(-,root,root,-)
