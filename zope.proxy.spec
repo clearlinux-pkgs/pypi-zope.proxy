@@ -4,7 +4,7 @@
 #
 Name     : zope.proxy
 Version  : 4.3.0
-Release  : 12
+Release  : 13
 URL      : https://pypi.debian.net/zope.proxy/zope.proxy-4.3.0.tar.gz
 Source0  : https://pypi.debian.net/zope.proxy/zope.proxy-4.3.0.tar.gz
 Summary  : Generic Transparent Proxies
@@ -70,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1529091597
+export SOURCE_DATE_EPOCH=1530324804
 python3 setup.py build -b py3
 
 %check
@@ -92,7 +92,7 @@ echo ----[ mark ]----
 
 %files dev
 %defattr(-,root,root,-)
-/usr/include/python3.6m/zope.proxy/proxy.h
+/usr/include/python3.7m/zope.proxy/proxy.h
 
 %files license
 %defattr(-,root,root,-)
