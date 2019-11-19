@@ -4,7 +4,7 @@
 #
 Name     : zope.proxy
 Version  : 4.3.3
-Release  : 24
+Release  : 25
 URL      : https://files.pythonhosted.org/packages/e2/44/bea546c55488c044351e51ebf23bf440b19876e0069a418cadc1bd5736f7/zope.proxy-4.3.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e2/44/bea546c55488c044351e51ebf23bf440b19876e0069a418cadc1bd5736f7/zope.proxy-4.3.3.tar.gz
 Summary  : Generic Transparent Proxies
@@ -21,17 +21,12 @@ BuildRequires : setuptools
 BuildRequires : zope.interface
 
 %description
-``zope.proxy``
 ==============
-.. image:: https://img.shields.io/pypi/v/zope.proxy.svg
-:target: https://pypi.python.org/pypi/zope.proxy/
-:alt: Latest Version
 
 %package dev
 Summary: dev components for the zope.proxy package.
 Group: Development
 Provides: zope.proxy-devel = %{version}-%{release}
-Requires: zope.proxy = %{version}-%{release}
 Requires: zope.proxy = %{version}-%{release}
 
 %description dev
@@ -66,14 +61,14 @@ python3 components for the zope.proxy package.
 
 %prep
 %setup -q -n zope.proxy-4.3.3
+cd %{_builddir}/zope.proxy-4.3.3
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1573508164
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1574205881
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -105,7 +100,7 @@ echo ----[ mark ]----
 
 %files dev
 %defattr(-,root,root,-)
-/usr/include/python3.7m/zope.proxy/proxy.h
+/usr/include/python3.8/zope.proxy/proxy.h
 
 %files license
 %defattr(0644,root,root,0755)
