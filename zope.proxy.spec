@@ -4,7 +4,7 @@
 #
 Name     : zope.proxy
 Version  : 4.3.5
-Release  : 35
+Release  : 36
 URL      : https://files.pythonhosted.org/packages/ab/37/26899cb231ecfa04822a17a669eac6df7ef0c2a86e2b78001db0cd3edd46/zope.proxy-4.3.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ab/37/26899cb231ecfa04822a17a669eac6df7ef0c2a86e2b78001db0cd3edd46/zope.proxy-4.3.5.tar.gz
 Summary  : Generic Transparent Proxies
@@ -21,18 +21,13 @@ BuildRequires : setuptools
 BuildRequires : zope.interface
 
 %description
-================
 ``zope.proxy``
-================
-.. image:: https://img.shields.io/pypi/v/zope.proxy.svg
-:target: https://pypi.python.org/pypi/zope.proxy/
-:alt: Latest Version
+        ================
 
 %package dev
 Summary: dev components for the zope.proxy package.
 Group: Development
 Provides: zope.proxy-devel = %{version}-%{release}
-Requires: zope.proxy = %{version}-%{release}
 Requires: zope.proxy = %{version}-%{release}
 
 %description dev
@@ -77,15 +72,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1584378847
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1608007080
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
@@ -110,7 +104,7 @@ echo ----[ mark ]----
 
 %files dev
 %defattr(-,root,root,-)
-/usr/include/python3.8/zope.proxy/proxy.h
+/usr/include/python3.9/zope.proxy/proxy.h
 
 %files license
 %defattr(0644,root,root,0755)
