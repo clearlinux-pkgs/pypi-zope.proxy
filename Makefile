@@ -1,5 +1,5 @@
 PKG_NAME := zope.proxy
-URL = https://files.pythonhosted.org/packages/ab/37/26899cb231ecfa04822a17a669eac6df7ef0c2a86e2b78001db0cd3edd46/zope.proxy-4.3.5.tar.gz
+URL = https://files.pythonhosted.org/packages/63/c4/61fd8fee17b3e54bc32c5d7815114a6c334fd100352fc3c07730e54f95c0/zope.proxy-4.4.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
