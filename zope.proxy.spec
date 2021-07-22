@@ -4,7 +4,7 @@
 #
 Name     : zope.proxy
 Version  : 4.3.5
-Release  : 40
+Release  : 41
 URL      : https://files.pythonhosted.org/packages/ab/37/26899cb231ecfa04822a17a669eac6df7ef0c2a86e2b78001db0cd3edd46/zope.proxy-4.3.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ab/37/26899cb231ecfa04822a17a669eac6df7ef0c2a86e2b78001db0cd3edd46/zope.proxy-4.3.5.tar.gz
 Summary  : Generic Transparent Proxies
