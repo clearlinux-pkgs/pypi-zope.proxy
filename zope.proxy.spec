@@ -4,7 +4,7 @@
 #
 Name     : zope.proxy
 Version  : 4.4.0
-Release  : 45
+Release  : 46
 URL      : https://files.pythonhosted.org/packages/63/c4/61fd8fee17b3e54bc32c5d7815114a6c334fd100352fc3c07730e54f95c0/zope.proxy-4.4.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/63/c4/61fd8fee17b3e54bc32c5d7815114a6c334fd100352fc3c07730e54f95c0/zope.proxy-4.4.0.tar.gz
 Summary  : Generic Transparent Proxies
@@ -72,7 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1626970993
+export SOURCE_DATE_EPOCH=1637096570
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -104,7 +104,7 @@ echo ----[ mark ]----
 
 %files dev
 %defattr(-,root,root,-)
-/usr/include/python3.9/zope.proxy/proxy.h
+/usr/include/python3.10/zope.proxy/proxy.h
 
 %files license
 %defattr(0644,root,root,0755)
