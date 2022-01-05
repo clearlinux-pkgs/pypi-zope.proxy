@@ -4,7 +4,7 @@
 #
 Name     : zope.proxy
 Version  : 4.5.0
-Release  : 48
+Release  : 49
 URL      : https://files.pythonhosted.org/packages/18/e6/0edb218c8aa333ceb498653bff2dd9673777e8f58f945a0ae2db2d6bfd8b/zope.proxy-4.5.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/18/e6/0edb218c8aa333ceb498653bff2dd9673777e8f58f945a0ae2db2d6bfd8b/zope.proxy-4.5.0.tar.gz
 Summary  : Generic Transparent Proxies
@@ -13,12 +13,10 @@ License  : ZPL-2.1
 Requires: zope.proxy-license = %{version}-%{release}
 Requires: zope.proxy-python = %{version}-%{release}
 Requires: zope.proxy-python3 = %{version}-%{release}
-Requires: setuptools
-Requires: zope.interface
 BuildRequires : buildreq-distutils3
+BuildRequires : pypi(setuptools)
+BuildRequires : pypi(zope.interface)
 BuildRequires : python3-dev
-BuildRequires : setuptools
-BuildRequires : zope.interface
 
 %description
 ``zope.proxy``
@@ -72,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1637169399
+export SOURCE_DATE_EPOCH=1641415273
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
