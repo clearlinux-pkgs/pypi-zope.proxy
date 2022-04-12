@@ -4,7 +4,7 @@
 #
 Name     : pypi-zope.proxy
 Version  : 4.5.0
-Release  : 50
+Release  : 51
 URL      : https://files.pythonhosted.org/packages/18/e6/0edb218c8aa333ceb498653bff2dd9673777e8f58f945a0ae2db2d6bfd8b/zope.proxy-4.5.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/18/e6/0edb218c8aa333ceb498653bff2dd9673777e8f58f945a0ae2db2d6bfd8b/zope.proxy-4.5.0.tar.gz
 Summary  : Generic Transparent Proxies
@@ -70,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641603651
+export SOURCE_DATE_EPOCH=1649800864
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
