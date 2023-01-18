@@ -1,5 +1,5 @@
 PKG_NAME := pypi-zope.proxy
-URL = https://files.pythonhosted.org/packages/8d/76/fa02bfc184ec20c28517e2a55dd6069fbb43269499918f23ec773fedd8fb/zope.proxy-4.6.1.tar.gz
+URL = https://files.pythonhosted.org/packages/ec/93/e2fbb3c34cdd29ba09909c25c0153522a59939f84f15cc0c88865780f1d7/zope.proxy-5.0.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
