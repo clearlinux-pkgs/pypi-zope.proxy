@@ -7,7 +7,7 @@
 #
 Name     : pypi-zope.proxy
 Version  : 5.0.0
-Release  : 66
+Release  : 67
 URL      : https://files.pythonhosted.org/packages/ec/93/e2fbb3c34cdd29ba09909c25c0153522a59939f84f15cc0c88865780f1d7/zope.proxy-5.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ec/93/e2fbb3c34cdd29ba09909c25c0153522a59939f84f15cc0c88865780f1d7/zope.proxy-5.0.0.tar.gz
 Source1  : https://files.pythonhosted.org/packages/ec/93/e2fbb3c34cdd29ba09909c25c0153522a59939f84f15cc0c88865780f1d7/zope.proxy-5.0.0.tar.gz.asc
@@ -83,7 +83,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1683049819
+export SOURCE_DATE_EPOCH=1685545553
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
