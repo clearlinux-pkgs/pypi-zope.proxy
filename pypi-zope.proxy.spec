@@ -5,7 +5,7 @@
 #
 Name     : pypi-zope.proxy
 Version  : 5.1
-Release  : 70
+Release  : 71
 URL      : https://files.pythonhosted.org/packages/92/97/2741828b69a23752af21bdc3aaf8792ce8b5cf07be74232deb9ad06f1f34/zope.proxy-5.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/92/97/2741828b69a23752af21bdc3aaf8792ce8b5cf07be74232deb9ad06f1f34/zope.proxy-5.1.tar.gz
 Summary  : Generic Transparent Proxies
